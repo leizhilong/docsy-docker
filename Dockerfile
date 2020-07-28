@@ -6,6 +6,7 @@ ADD entrypoint.sh /
 
 RUN git clone --recurse-submodules https://github.com/google/docsy /themes/docsy
 
+WORKDIR /src
 
 ENTRYPOINT [ "/entrypoint.sh" ]
 

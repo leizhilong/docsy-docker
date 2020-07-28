@@ -10,7 +10,8 @@ asciidoctor --version
 
 pwd
 
-npm install
+echo "Copying themes"
 cp -r /themes/docsy  ./themes/
+ls -l
 
-hugo $@
+$@
