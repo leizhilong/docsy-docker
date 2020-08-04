@@ -7,11 +7,13 @@ autoprefixer --version
 babel --version
 pygmentize -V
 asciidoctor --version
-
 pwd
 
 echo "Copying themes"
 cp -r /themes/docsy  ./themes/
 ls -l
+
+echo "Installing dependencies"
+yarn
 
 $@
