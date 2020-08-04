@@ -14,6 +14,6 @@ cp -r /themes/docsy  ./themes/
 ls -l
 
 echo "Installing dependencies"
-yarn
+yarn install
 
 $@
