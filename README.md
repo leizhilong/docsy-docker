@@ -8,7 +8,7 @@ This docker image is based on [hugo-docker](https://github.com/jakejarvis/hugo-d
 
 ### prerequisite
 
-`yarn.lock` should be generated before building so that `yarn instal` in `entrypoint.sh` don't have to resolve dependencies online.
+`yarn.lock` should be generated before building so that running of `yarn install` in `entrypoint.sh` won't have to resolve dependencies online.
 
 ### build site
 
@@ -33,4 +33,4 @@ docker run -v `pwd`:/src \
 
 ### Tips
 
-> What the `entrypoint.sh` do is to prepare the Docsy dependencies before hugo starts do its job, which includes: copying cached Docsy theme int `themes` folder, installing `autoprefixer` and `postcss-cli` from yarn cache. Then hugo will be started will all arguments passed.
+> What the `entrypoint.sh` do is to prepare the Docsy dependencies before hugo starts do its job, which includes: copying cached Docsy theme int `themes` folder, installing `autoprefixer` and `postcss-cli` from yarn cache. Then hugo will be started with all arguments passed.
